@@ -47,8 +47,6 @@
     <DefineConstants>TRACE;$(DefineConstants)</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AssemblyOriginatorKeyFile>api.pfx</AssemblyOriginatorKeyFile>
-    <SignAssembly>true</SignAssembly>
   </PropertyGroup>
 
   <ItemGroup>
