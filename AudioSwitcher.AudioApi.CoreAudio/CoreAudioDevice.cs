@@ -74,6 +74,21 @@ namespace AudioSwitcher.AudioApi.CoreAudio
 
         public string RealId => _globalId;
 
+        public Guid? EndpointGuid
+        {
+            get
+            {
+                if (Properties != null &&
+                    Properties.Contains(PropertyKeys.PKEY_AUDIO_ENDPOINT_GUID) &&
+                    Properties[PropertyKeys.PKEY_AUDIO_ENDPOINT_GUID] is Guid endpointGuid)
+                {
+                    return endpointGuid;
+                }
+
+                return null;
+            }
+        }
+
         public override string InterfaceName
         {
             get
